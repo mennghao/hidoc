@@ -5,3 +5,7 @@ node_js:
      - 4.0  
 
      - 5.0
+
+before_script:
+
+	 - npm install -g mocha
