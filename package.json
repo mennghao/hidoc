@@ -1,0 +1,36 @@
+{
+  "name": "hidoc",
+  "version": "0.0.1",
+  "description": "根据.md文件生成一组api文档页面",
+  "main": "index.js",
+  "bin": {
+    "hidoc": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mennghao/hidoc.git"
+  },
+  "author": "mennghao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mennghao/hidoc/issues"
+  },
+  "homepage": "https://github.com/mennghao/hidoc#readme",
+  "keywords": [
+    "doc",
+    "markdown",
+    "documentation",
+    "documentation generator",
+    "api documentation generator"
+  ],
+  "dependencies": {
+    "commander": "^2.9.0",
+    "marked": "^0.3.5"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1"
+  }
+}
