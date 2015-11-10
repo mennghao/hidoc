@@ -1,9 +1,11 @@
 # hidoc
+[![](https://img.shields.io/travis/mennghao/hidoc.svg?style=flat-square)](https://travis-ci.org/mennghao/hidoc) [![](https://img.shields.io/npm/v/hidoc.svg?style=flat-square)](https://www.npmjs.com/package/hidoc) [![](https://img.shields.io/npm/dt/hidoc.svg?style=flat-square)](https://www.npmjs.com/package/hidoc) [![](https://img.shields.io/github/license/mennghao/hidoc.svg?style=flat-square)](https://github.com/mennghao/hidoc/blob/master/LICENSE)
+
 根据.md文件生成一组api文档页面
 
 ## 安装
 
-````
+```
 ➜ npm install -g hidoc
 ```
 安装完成之后会提供一个全局命令```hidoc```
