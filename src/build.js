@@ -2,7 +2,7 @@
 
 let fs = require('fs'),
 	_  = require('./util'),
-	path = __dirname + '../build/',
+	path = __dirname + '/../build/',
 	dist = process.cwd() + '/dist/'
 
 /**
