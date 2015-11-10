@@ -44,6 +44,11 @@ let moveStatic = () => {
 	})
 }
 
+exports.create = () => {
+	_.checkDistDir('dist')
+	_.checkDistDir('src')
+}
+
 exports.init = () => {
 	mkdir();
 	moveStatic();

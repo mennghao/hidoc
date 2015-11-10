@@ -8,10 +8,15 @@ let program = require('commander'),
 program
 	.allowUnknownOption()
 	.version(version)
-	.option('init', 'Start')
+	.option('init', 'init project')
+	.option('build', 'init project')
 	.parse(process.argv)
 
 //接收init参数
 if (program.init){
 	start.init();
+}
+
+if (program.build) {
+	start.build()
 }
