@@ -25,7 +25,7 @@ exports.replaceTxt = (txt, title, menu, content) => txt.replace(/\{+(.*?)\}+/ig,
  * @param  {[type]} name [description]
  * @return {[type]}      [description]
  */
-exports.rename = (name) => name.replace(/\.md$/ig, '.html')
+exports.rename = (name) => name.replace('.md', '.html')
 
 /**
  * [如果没有目录则创建一个]
