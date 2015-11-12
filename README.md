@@ -29,3 +29,7 @@ src目录存放编写好的文档```.md```文件, 然后执行
 ➜ hidoc build
 ```
 之后会将生成好的文档放在```dist```目录
+
+## 示例
+
+[演示地址](http://mennghao.github.io/hidoc/example/dist/index.html)
