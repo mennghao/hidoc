@@ -1,6 +1,6 @@
 {
   "name": "hidoc",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "根据.md文件生成一组api文档页面",
   "main": "index.js",
   "bin": {
