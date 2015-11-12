@@ -23,12 +23,6 @@ let formatMenu = (list, filename) => list.map((x) => x.replace(/(.*?)\.md$/ig, (
  * @return {[type]}       [description]
  */
 let traverseFiles = (files) => {
-	/**
-	 * [获取到列表]
-	 * @type {[type]}
-	 */
-	// menu = formatMenu(files)
-
 
 	files.forEach(function(file){
 
