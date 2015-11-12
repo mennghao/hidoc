@@ -36,8 +36,6 @@ let traverseFiles = (files) => {
 			 */
 			menu = formatMenu(files, file)
 
-			console.log(menu)
-
 			fs.writeFile(dist + _.rename(file), _.replaceTxt(tpl, _.getTitle(data), menu, data), 'utf8', () => {
 				console.log(file + ' conversion complete')
 			})
