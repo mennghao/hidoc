@@ -10,11 +10,12 @@ let fs = require('fs'),
 	tpl = fs.readFileSync(__dirname + '/tpl.html', 'utf8') //获取模板
 
 /**
- * [获取到menu列表]
+ * [获取到menu列表, 并动态添加className]
  * @param  {[type]} list) [description]
  * @return {[type]}       [description]
  */
-let formatMenu = (list) => list.map((x) => x.replace(/(.*?)\.md$/ig, ($1, $2) => '<li><a href="./' + $2 + '.html">' + $2 + '</a></li>')).join('')
+let formatMenu = (list, filename) => list.map((x) => x.replace(/(.*?)\.md$/ig, ($1, $2) => (filename.indexOf($2) > -1 ? '<li class="current">' : '<li>') + '<a href="./' + $2 + '.html">' + $2 + '</a></li>')).join('')
+
 
 /**
  * [遍历目录下的md]
@@ -26,7 +27,8 @@ let traverseFiles = (files) => {
 	 * [获取到列表]
 	 * @type {[type]}
 	 */
-	menu = formatMenu(files)
+	// menu = formatMenu(files)
+
 
 	files.forEach(function(file){
 
@@ -34,6 +36,13 @@ let traverseFiles = (files) => {
 			if (err) throw err
 
 			data = md(data)
+			/**
+			 * [动态生成menu]
+			 * @type {[type]}
+			 */
+			menu = formatMenu(files, file)
+
+			console.log(menu)
 
 			fs.writeFile(dist + _.rename(file), _.replaceTxt(tpl, _.getTitle(data), menu, data), 'utf8', () => {
 				console.log(file + ' conversion complete')
