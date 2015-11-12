@@ -32,4 +32,4 @@ src目录存放编写好的文档```.md```文件, 然后执行
 
 ## 示例
 
-[演示地址](http://mennghao.github.io/hidoc/example/dist/index.html)
+[演示地址](http://mennghao.github.io/hidoc/dist/index.html)
