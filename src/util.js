@@ -14,9 +14,10 @@ exports.getTitle = (txt) => />(.*?)</ig.exec(txt.split('\n')[0])[1]
  * @param  {[type]} txt [description]
  * @return {[type]}     [description]
  */
-exports.replaceTxt = (txt, title, menu, content) => txt.replace(/\{+(.*?)\}+/ig, function($1){
+exports.replaceTxt = (txt, title, menu, second, content) => txt.replace(/\{+(.*?)\}+/ig, function($1){
 	if ($1.indexOf('title') > -1) return title
 	if ($1.indexOf('menu') > -1) return menu
+	if ($1.indexOf('second') > -1) return second
 	if ($1.indexOf('content') > -1) return content
 })
 
