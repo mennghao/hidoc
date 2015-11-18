@@ -30,6 +30,11 @@ src目录存放编写好的文档```.md```文件, 然后执行下面的命令
 ```
 之后会将生成好的文档放在```dist```目录
 
+```
+➜ hidoc version
+```
+查看版本
+
 ## 示例
 
 [演示地址](http://mennghao.github.io/hidoc/dist/index.html)
