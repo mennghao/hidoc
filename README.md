@@ -38,3 +38,6 @@ src目录存放编写好的文档```.md```文件, 然后执行下面的命令
 ## 示例
 
 [演示地址](http://mennghao.github.io/hidoc/dist/index.html)
+
+## 页面截图
+![hidoc](./example/hidoc.png)
